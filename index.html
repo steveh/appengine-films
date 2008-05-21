@@ -1,0 +1,11 @@
+<html>
+	  <head>
+  </head>
+  <body>
+  	<ul>
+    {% for film in films %}
+    	<li><a href="/imdb?id={{ film.id }}">{{ film.title }}</a></li>
+    {% endfor %}
+  	</ul>
+  </body>
+</html>
